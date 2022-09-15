@@ -6,6 +6,7 @@ pathadd() {
 
 pathadd "~/.local/bin"
 
+alias ls="exa"
 alias ll="exa -l -g --icons"
 alias llt="exa -l --icons --tree"
 alias tf="terraform"
