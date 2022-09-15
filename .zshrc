@@ -1,3 +1,13 @@
-if [[ -f ~/dotfiles/zsh-init.sh ]]; then
-  sh ~/dotfiles/zsh-init.sh
-fi
+pathadd() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
+pathadd "~/.local/bin"
+
+alias ll="exa -l -g --icons"
+alias llt="exa -l --icons --tree"
+alias tf="terraform"
+
+eval "$(starship init zsh)"
