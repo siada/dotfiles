@@ -9,6 +9,8 @@
 ## Env download
 
 1. git clone [https://github.com/siada/dotfiles.git](https://github.com/siada/dotfiles.git)
+1. git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+1. git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 
 Add to .zshrc:
 
@@ -16,6 +18,11 @@ Add to .zshrc:
 if [[ -f ~/dotfiles/.zshrc ]]; then
   source ~/dotfiles/.zshrc
 fi
+```
+
+update the plugins:
+```bash
+plugins (zsh-nvm zsh-autosuggestions ssh-agent git)
 ```
 
 ## Windows Terminal Profile
