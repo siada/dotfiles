@@ -32,3 +32,12 @@ fi
                 "name": "WSL"
             }
 ```
+
+## Fonts
+
+1. Download CascadiaCode NerdFont edition [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/CascadiaCode.zip)
+1. Install the following font files:
+    * Mono Windows Compatible
+    * Mono
+    * Regular
+    * Regular Windows Compatbiel
