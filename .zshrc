@@ -6,15 +6,15 @@ pathadd() {
 
 # path additions
 
-pathadd "~/.local/bin"
-
+PATH="$PATH:/home/alex/.local/bin"
 # aliases
 
-alias ls="exa"
-alias ll="exa -l -g --icons"
-alias llt="exa -l --icons --tree"
+alias ls="eza -g --icons"
+alias ll="eza -l -g --icons"
+alias llt="eza -l --icons --tree --level=2"
 alias tf="terraform"
-alias zshconfig="mate ~/.zshrc"
+alias zshconfig="nano ~/.zshrc"
+alias cat='bat --style=plain'
 
 # inits
 
